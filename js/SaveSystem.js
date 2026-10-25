@@ -1,0 +1,1 @@
+export class SaveSystem{static read(){try{return Number(localStorage.getItem('greenhouse-best'))||0;}catch{return 0;}}static write(score){try{localStorage.setItem('greenhouse-best',String(Math.max(score,this.read())));}catch{}}}
